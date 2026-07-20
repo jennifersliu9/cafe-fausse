@@ -28,7 +28,7 @@ function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[hsl(24,10%,10%/0.15)]" />
 
-        <div className="relative mx-auto flex min-h-[88vh] max-w-6xl items-center px-6 py-20 md:py-28">
+        <div className="relative mx-auto flex min-h-[88vh] max-w-6xl items-center px-8 py-20 md:px-6 md:py-28">
           <div className="max-w-xl rounded-sm border border-[hsl(24,10%,88%)] bg-white px-8 py-10 shadow-lg md:max-w-2xl md:px-10 md:py-12">
             <p className="mb-6 text-xs font-semibold tracking-[0.35em] text-[hsl(24,10%,40%)] uppercase">
               Washington, DC · Est. 2010
@@ -61,7 +61,7 @@ function Home() {
       </section>
 
       {/* Highlights */}
-      <section className="mx-auto max-w-6xl px-6 py-12 md:py-16">
+      <section className="mx-auto max-w-6xl px-8 py-12 md:px-6 md:py-16">
         <div className="mb-10 text-center">
           <p className="mb-3 text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase">
             Explore
@@ -125,7 +125,7 @@ function Home() {
       <Separator className="mx-auto max-w-6xl" />
 
       {/* Newsletter */}
-      <section className="mx-auto max-w-2xl px-6 py-12 text-center md:py-16">
+      <section className="mx-auto max-w-2xl px-8 py-12 text-center md:px-6 md:py-16">
         <p className="mb-3 text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase">
           Newsletter
         </p>
