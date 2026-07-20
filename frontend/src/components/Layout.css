@@ -76,3 +76,9 @@
     align-items: flex-start;
   }
 }
+
+@media (max-width: 760px) and (orientation: portrait) {
+  .brand {
+    padding-inline-start: 1rem;
+  }
+}
