@@ -78,11 +78,11 @@
 }
 
 @media (max-width: 760px) and (orientation: portrait) {
-  .brand {
-    padding-inline-start: 1rem;
+  .site-header .container {
+    padding-inline-start: max(2.75rem, env(safe-area-inset-left));
   }
 
-  .main-nav {
-    padding-inline-end: 1rem;
+  .header-inner {
+    padding-inline: 1rem 1.25rem;
   }
 }
