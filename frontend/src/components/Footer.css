@@ -30,6 +30,15 @@
   color: #d9cfc4;
 }
 
+.footer-contact p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-contact h2 {
+  margin-bottom: 1rem;
+}
+
 .footer-copy {
   text-align: center;
   color: #a69789;

@@ -81,4 +81,8 @@
   .brand {
     padding-inline-start: 1rem;
   }
+
+  .main-nav {
+    padding-inline-end: 1rem;
+  }
 }

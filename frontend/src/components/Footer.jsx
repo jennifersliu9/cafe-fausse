@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
-        <div>
+        <div className="footer-contact">
           <h2>{contactInfo.name}</h2>
           <p>{contactInfo.address}</p>
           <p>{contactInfo.phone}</p>
