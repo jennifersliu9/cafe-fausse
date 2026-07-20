@@ -1,0 +1,39 @@
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Python / Backend
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/.venv/
+backend/venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+frontend/.env
+backend/.env
+
+# Build output
+frontend/dist/
+dist/
+build/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

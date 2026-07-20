@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+
+  /* This tells Tailwind v4 where to find your Shadcn design tokens */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+/* Shadcn Sera Theme Variables */
+@layer base {
+  :root {
+    --background: 40 30% 98%;      /* Warm, soft paper background */
+    --foreground: 24 10% 10%;      /* Deep charcoal text */
+    --card: 40 30% 98%;
+    --card-foreground: 24 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 10%;
+    --primary: 24 10% 10%;         /* Elegant dark primary color */
+    --primary-foreground: 40 30% 98%;
+    --secondary: 40 10% 90%;
+    --secondary-foreground: 24 10% 10%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 24 10% 40%;
+    --accent: 40 10% 90%;
+    --accent-foreground: 24 10% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 24 10% 85%;          /* Crisp, thin borders */
+    --input: 24 10% 85%;
+    --ring: 24 10% 10%;
+    --radius: 0.125rem;            /* Sophisticated, slightly sharp edges */
+  }
+
+  .dark {
+    --background: 24 10% 10%;
+    --foreground: 40 30% 98%;
+    --card: 24 10% 10%;
+    --card-foreground: 40 30% 98%;
+    /* ... dark mode parameters ... */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  /* Full-color aliases for legacy Layout/page CSS files */
+  :root {
+    --color-surface: hsl(var(--card));
+    --color-ink: hsl(var(--foreground));
+    --color-border: hsl(var(--border));
+    --color-muted: hsl(var(--muted-foreground));
+    --color-accent: hsl(var(--primary));
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  .page {
+    padding-block: 3rem 4rem;
+  }
+
+  .page-header {
+    max-width: 42rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .page-header p {
+    color: hsl(var(--muted-foreground));
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 0.75rem;
+  }
+}

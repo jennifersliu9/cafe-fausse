@@ -1,0 +1,52 @@
+.reservation-form {
+  max-width: 760px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.reservation-form [data-slot="button"] {
+  margin-top: 0.25rem;
+  border-color: hsl(var(--foreground));
+  color: hsl(var(--foreground));
+}
+
+.reservation-form [data-slot="button"]:hover:not(:disabled) {
+  background: hsl(var(--muted));
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid label {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.optional {
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+@media (max-width: 700px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,13 @@
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+}
+
+.section {
+  padding-block: 3rem;
+}
