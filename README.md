@@ -210,4 +210,4 @@ cd frontend
 npm run build
 ```
 
-Serve the `frontend/dist` folder with a static host (e.g. Vercel). Deploy the Flask API and PostgreSQL separately, and set production env vars (`DATABASE_URL`, `CORS_ORIGINS`, `VITE_API_URL`).
+The built static files are output to `frontend/dist/`. Run the Flask API and PostgreSQL locally or on your own infrastructure as needed.
